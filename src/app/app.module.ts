@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AdminlistuserComponent } from './components/adminlistuser/adminlistuser.component';
 import { AdminlistinformationComponent } from './components/adminlistinformation/adminlistinformation.component';
 import { AdminlistconsultantComponent } from './components/adminlistconsultant/adminlistconsultant.component';
@@ -158,13 +162,16 @@ import { IndexComponent } from './components/index/index.component';
     ServicegrhheaderComponent,
     ServicegrhfooterComponent,
     ServicegrhmenuComponent,
-    IndexComponent
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

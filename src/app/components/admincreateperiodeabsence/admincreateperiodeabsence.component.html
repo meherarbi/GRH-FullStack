@@ -1,1 +1,52 @@
-<p>admincreateperiodeabsence works!</p>
+<div class="row justify-content-center">
+  <div class="col-md-4 register-user">
+    <!-- form card register -->
+    <div class="card-body">
+      <form [formGroup]="periodeabsenceForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="inputName">nom</label>
+          <input class="form-control" type="text" formControlName="nom" />
+          <!-- error -->
+
+          <label for="inputName">duree</label>
+          <input class="form-control" type="number" formControlName="duree" />
+          <!-- error -->
+
+          <label for="inputName">dateCreation</label>
+          <input
+            class="form-control"
+            type="date"
+            formControlName="dateCreation"
+          />
+          <!-- error -->
+
+          <label for="inputName">dateDebut</label>
+          <input class="form-control" type="date" formControlName="dateDebut" />
+          <!-- error -->
+          <label for="inputName">dateFin</label>
+          <input class="form-control" type="date" formControlName="dateFin" />
+          <!-- error -->
+          <label for="inputName">titre</label>
+          <input class="form-control" type="text" formControlName="titre" />
+          <!-- error -->
+          <label for="inputName">unite</label>
+          <input class="form-control" type="text" formControlName="unite" />
+          <!-- error -->
+          <label for="inputName">createdby</label>
+          <input class="form-control" type="text" formControlName="createdby" />
+          <!-- error -->
+          <label for="inputName">updatedby</label>
+          <input class="form-control" type="text" formControlName="updatedby" />
+          <!-- error -->
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-success btn-lg btn-block" type="submit">
+            Valider Ajout
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- form card register -->
+</div>
