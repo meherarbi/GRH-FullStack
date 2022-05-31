@@ -1,1 +1,46 @@
-<p>employecreatefeuilletemp works!</p>
+<div class="row justify-content-center">
+  <div class="col-md-4 register-user">
+    <!-- form card register -->
+    <div class="card-body">
+      <form [formGroup]="feuilletempForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="inputName">nom</label>
+          <input class="form-control" type="text" formControlName="nom" />
+          <!-- error -->
+
+          <label for="inputName">jours</label>
+          <input class="form-control" type="text" formControlName="jours" />
+          <!-- error -->
+
+          <label for="inputName">etat</label>
+          <input class="form-control" type="text" formControlName="etat" />
+          <!-- error -->
+
+          <label for="inputName">commentaire</label>
+          <input
+            class="form-control"
+            type="text"
+            formControlName="commentaire"
+          />
+          <!-- error -->
+          <label for="inputName">fermer</label>
+          <input class="form-control" type="text" formControlName="fermer" />
+          <!-- error -->
+          <label for="inputName">createdby</label>
+          <input class="form-control" type="text" formControlName="createdby" />
+          <!-- error -->
+          <label for="inputName">updatedby</label>
+          <input class="form-control" type="text" formControlName="updatedby" />
+          <!-- error -->
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-success btn-lg btn-block" type="submit">
+            Valider Ajout
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- form card register -->
+</div>

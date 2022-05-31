@@ -2,24 +2,10 @@
   <div class="col-md-4 register-user">
     <!-- form card register -->
     <div class="card-body">
-      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+      <form [formGroup]="candidatForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
           <label for="inputName">nom</label>
           <input class="form-control" type="text" formControlName="nom" />
-          <!-- error -->
-
-          <label for="inputName">xx</label>
-          <input class="form-control" type="text" formControlName="xx" />
-          <!-- error -->
-
-
-          <label for="inputName">yy</label>
-          <input class="form-control" type="text" formControlName="yy" />
-          <!-- error -->
-
-
-          <label for="inputName">zz</label>
-          <input class="form-control" type="text" formControlName="zzz" />
           <!-- error -->
         </div>
 
@@ -33,4 +19,3 @@
   </div>
   <!-- form card register -->
 </div>
-
